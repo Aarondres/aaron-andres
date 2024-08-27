@@ -1,0 +1,437 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>cupcake ni aira</title>
+<meta name="description" content>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/cuppy.png">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/slicknav.css">
+<link rel="stylesheet" href="assets/css/animate.min.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="assets/css/themify-icons.css">
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="body-bg">
+<header>
+<div class="header-area">
+<div class="main-header ">
+<div class="header-top">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xl-12">
+<div class="d-flex justify-content-between flex-wrap align-items-center">
+<div class="header-info-left d-none d-sm-block">
+<ul class="header-social">
+<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+</ul>
+</div>
+<div class="logo">
+<a href="index.html"><img src="assets/img/logo/logo.png" alt></a>
+</div>
+<div class="header-info-right d-none d-lg-block">
+<a href="#" class="btn_2">Call Us: 09223016205</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header-bottom  header-sticky">
+<div class="container-fluid">
+<div class="row justify-content-center">
+<div class="col-xl-12">
+
+<div class="main-menu d-none d-lg-block text-center">
+<nav>
+<ul id="navigation">
+<li><a href="index.html">Home</a></li>
+<li><a href="cakes.html">Cakes</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<button onclick="toggleCart()">Cart</button>
+<div id="cart" style="display: none;">
+    <h2 class="lor">Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p class="rol">Total: <span id="cart-total">₱0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+    <button onclick="clearCart()">Clear Cart</button>
+  </div>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<div class="col-12">
+<div class="mobile_menu d-block d-lg-none"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+
+<div class="slider-area">
+<div class="single-slider slider-height2 slider-bg2 d-flex align-items-center">
+<div class="container">
+<div class="row justify-content-center ">
+<div class="col-xxl-12">
+
+<div class="hero-caption hero-caption2">
+<h2>Delicious Cakes</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<section class="latest-items section-padding fix">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="properties properties2 pb-40">
+<div class="properties-card">
+<div class="properties-img">
+<a href="#"><img src="assets/img/gallery/items1.jpg" alt></a>
+<div class="img-cap">
+<span>Add to cart</span>
+</div>
+</div>
+<div class="properties-caption properties-caption2">
+<h3><a href="#">Cashmere Tank + Bag</a></h3>
+<div class="properties-footer">
+<div class="price">
+<span>₱130.00</span><button onclick="addToCart('Product ', 130)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="properties properties2 pb-40">
+<div class="properties-card">
+<div class="properties-img">
+<a href="#"><img src="assets/img/gallery/items2.jpg" alt></a>
+<div class="img-cap">
+<span>Add to cart</span>
+</div>
+</div>
+<div class="properties-caption properties-caption2">
+<h3><a href="#">Delightful Lemon</a></h3>
+<div class="properties-footer">
+<div class="price">
+<span>₱200.00</span><button onclick="addToCart('Product 2', 200)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="properties properties2 pb-40">
+<div class="properties-card">
+<div class="properties-img">
+<a href="#"><img src="assets/img/gallery/items3.jpg" alt></a>
+<div class="img-cap">
+<span>Add to cart</span>
+</div>
+</div>
+<div class="properties-caption properties-caption2">
+<h3><a href="#">Sweet Suprise</a></h3>
+<div class="properties-footer">
+<div class="price">
+<span>₱900.00</span><button onclick="addToCart('Product 3', 900)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="properties properties2 pb-40">
+<div class="properties-card">
+<div class="properties-img">
+<a href="#"><img src="assets/img/gallery/items4.jpg" alt></a>
+<div class="img-cap">
+<span>Add to cart</span>
+</div>
+</div>
+<div class="properties-caption properties-caption2">
+<h3><a href="#">Cashmere Tank + Bag</a></h3>
+<div class="properties-footer">
+<div class="price">
+<span>₱444.00</span><button onclick="addToCart('Product 4', 444)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="properties properties2 pb-40">
+<div class="properties-card">
+<div class="properties-img">
+<a href="#"><img src="assets/img/gallery/items5.jpg" alt></a>
+<div class="img-cap">
+<span>Add to cart</span>
+</div>
+</div>
+<div class="properties-caption properties-caption2">
+<h3><a href="#">Cashmere Tank + Bag</a></h3>
+<div class="properties-footer">
+<div class="price">
+<span>₱1000.00</span><button onclick="addToCart('Product 5', 1000)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="properties properties2 pb-40">
+<div class="properties-card">
+<div class="properties-img">
+<a href="#"><img src="assets/img/gallery/items6.jpg" alt></a>
+<div class="img-cap">
+<span>Add to cart</span>
+</div>
+</div>
+<div class="properties-caption properties-caption2">
+<h3><a href="#">Cashmere Tank + Bag</a></h3>
+<div class="properties-footer">
+<div class="price">
+<span>₱1020.00</span><button onclick="addToCart('Product 6', 1020)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<div class="instragram ">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-6 col-lg-7 col-md-7 ">
+
+<div class="section-tittle  text-center mb-70">
+<h2>Follow us on Instagram</h2>
+<a href="#" class="btn_02 btn_02s mt-25"><i class="fab fa-instagram"></i>Cakeshop</a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="instra-img mb-30">
+<a href="#"><img src="assets/img/gallery/instra1.jpg" alt class="w-100"></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="instra-img mb-30">
+<a href="#"><img src="assets/img/gallery/instra2.jpg" alt class="w-100"></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="instra-img mb-30">
+<a href="#"><img src="assets/img/gallery/instra3.jpg" alt class="w-100"></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="instra-img mb-30">
+<a href="#"><img src="assets/img/gallery/instra4.jpg" alt class="w-100"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="footer-wrapper">
+<div class="footer-area footer-padding">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="footer-menu d-flex justify-content-between flex-wrap">
+<div class="logo">
+<img src="assets/img/logo/logo.png" alt>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="cakes.html">Cakes</a></li>
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="row justify-content-between">
+<div class="col-xxl-5 col-xl-6 col-lg-6 col-md-10">
+<div class="single-footer-caption mb-50">
+<div class="single-footer-caption mb-30">
+<div class="footer-tittle">
+<div class="footer-pera">
+<p>Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+
+<div class="socila mt-50">
+<a href="#" class="btn_02"><i class="fab fa-instagram"></i>Instagram</a>
+<a href="https://bit.ly/sai4ull" class="btn_02"><i class="fab fa-facebook-f"></i>Facebook</a>
+<a href="#" class="btn_02"><i class="fab fa-twitter"></i>Twitter</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle">
+<img src="assets/img/icon/location.svg" alt>
+<h4>Location</h4>
+<ul>
+<li>
+<p>2137 b. m. natividad st. Sta.Cruz Manila</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle">
+<img src="assets/img/icon/phone.svg" alt>
+<h4>Contact</h4>
+<ul>
+<li><a href="#">09223016205</a></li>
+<li><p><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="77141819031614033714161c12041f18075914181a">[email&#160;protected]</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom-area">
+<div class="container">
+<div class="footer-border">
+<div class="row">
+<div class="col-xl-12 ">
+<div class="footer-copy-right text-center">
+<p>Copyright &copy;<script data-cfasync="false" src=cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank" rel="nofollow noopener">cupcake ni aira</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<div id="back-top">
+<a class="wrapper" title="Go to Top" href="#">
+<div class="arrows-container">
+<div class="arrow arrow-one">
+</div>
+<div class="arrow arrow-two">
+</div>
+</div>
+</a>
+</div>
+
+
+<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/jquery.slicknav.min.js"></script>
+
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/jquery.form.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/mail-script.js"></script>
+<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script>
+        let cart = [];
+        let cartTotal = 0;
+    
+        function addToCart(productName, price) {
+          cart.push({ name: productName, price: price });
+          cartTotal += price;
+          updateCart();
+        }
+    
+        function updateCart() {
+          const cartItems = document.getElementById('cart-items');
+          cartItems.innerHTML = '';
+          cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name}: ₱${item.price.toFixed(2)}`;
+            cartItems.appendChild(li);
+          });
+          document.getElementById('cart-total').textContent = `₱${cartTotal.toFixed(2)}`;
+        }
+    
+        function toggleCart() {
+          const cartDiv = document.getElementById('cart');
+          cartDiv.style.display = cartDiv.style.display === 'none' ? 'block' : 'none';
+        }
+    
+        function checkout() {
+          // Implement checkout logic here (e.g., redirect to payment page)
+          alert("the amount you check out is" + " ₱" + cartTotal);
+         }
+      function clearCart() {
+      cart = [];
+      cartTotal = 0;
+      updateCart();
+    }
+       
+      </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387" integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ==" data-cf-beacon='{"rayId":"881a72e2eb527cfe","b":1,"version":"2024.4.1","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+</body>
+
+
+</html>
